@@ -33,7 +33,16 @@
         "mac": "cmd+alt+NumPad0",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "react-code-regions.customRegions": {
+          "type": "array",
+          "description": "Custom regions for react code"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

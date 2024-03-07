@@ -1,12 +1,27 @@
 import * as vscode from "vscode";
 
-import { defaultRegions, strings } from "./config/index";
+import {
+  defaultRegions,
+  ensureCustomRegionsConfiguration,
+  strings,
+} from "./config/index";
+import { Regions } from "./types";
 
 export function activate(context: vscode.ExtensionContext) {
+  // Automatically set user configuration if not already present
+  ensureCustomRegionsConfiguration();
+
   let disposable = vscode.commands.registerCommand(
     "react-code-regions.insertRegionComment",
     () => {
-      const regions = [...defaultRegions];
+      // Get custom comments array from configuration
+      const customRegions: Regions | void = vscode.workspace
+        .getConfiguration()
+        .get("react-code-regions.customRegions");
+
+      // Use custom array if defined, otherwise use default array
+      const regions = customRegions?.length ? customRegions : defaultRegions;
+
       // Show the menu to select a region
       vscode.window
         .showQuickPick(regions, {
