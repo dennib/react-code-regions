@@ -1,6 +1,6 @@
 {
-  "name": "rcr",
-  "displayName": "react-code-regions",
+  "name": "react-code-regions",
+  "displayName": "React Code Regions",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -10,21 +10,27 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.insertComment"
+    "onCommand:react-code-region.insertRegionComment"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "rcr.insertComment",
-        "title": "Insert Comment"
+        "command": "react-code-regions.insertRegionComment",
+        "title": "Insert region comment"
       }
     ],
     "keybindings": [
       {
-        "command": "rcr.insertComment",
+        "command": "react-code-regions.insertRegionComment",
         "key": "ctrl+alt+K",
         "mac": "cmd+alt+K",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "react-code-regions.insertRegionComment",
+        "key": "ctrl+alt+NumPad0",
+        "mac": "cmd+alt+NumPad0",
         "when": "editorTextFocus"
       }
     ]

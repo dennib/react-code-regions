@@ -1,6 +1,6 @@
-# rcr README
+# react-code-regions README
 
-This is the README for your extension "rcr". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "react-code-regions". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
