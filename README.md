@@ -1,71 +1,53 @@
 # react-code-regions README
 
-This is the README for your extension "react-code-regions". After writing up a brief description, we recommend including the following sections.
+Welcome to the README for the "react-code-regions" extension!
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The "react-code-regions" extension allows you to quickly insert predefined comments into your React code. Here's what it offers:
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Insert customizable comments into your React codebase effortlessly.
+- Select from a list of predefined comments to enhance code readability and organization.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+There are no specific requirements or dependencies for this extension.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `react-code-regions.customRegions`: Customize your list of regions for React code comments.
+
+## Usage
+
+To insert a predefined comment, use one of the following shortcuts:
+- Press `Ctrl+Alt+K` on your keyboard.
+- Press `Ctrl+Alt+Numpad0` on your keyboard.
+
+Select a comment from the available options and it will be inserted at the current cursor position.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at the moment. If you encounter any issues, please feel free to report them on the extension's GitHub repository.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.3
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of the "react-code-regions" extension.
 
 ---
 
-## Following extension guidelines
+## Following Extension Guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+Make sure to adhere to the best practices and guidelines outlined for creating Visual Studio Code extensions.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Check out the [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) for more details.
 
-## Working with Markdown
+## For More Information
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Enjoy coding with "react-code-regions"!

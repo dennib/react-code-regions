@@ -2,16 +2,18 @@
   "name": "react-code-regions",
   "displayName": "React Code Regions",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.87.0"
   },
+  "icon": "assets/logo.png",
   "categories": [
     "Other"
   ],
   "activationEvents": [
     "onCommand:react-code-region.insertRegionComment"
   ],
+  "publisher": "dennib",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
