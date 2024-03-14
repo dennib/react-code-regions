@@ -2,6 +2,7 @@ import * as vscode from "vscode";
 import { Regions } from "../types";
 
 export const defaultRegions: Regions = [
+  "refs",
   "hooks",
   "state",
   "effects",
