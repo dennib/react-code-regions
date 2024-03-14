@@ -1,6 +1,10 @@
 import * as vscode from "vscode";
 import { Regions } from "../types";
 
+/**
+ * @type {Regions}
+ * @description Default regions for React code comments.
+ */
 export const defaultRegions: Regions = [
   "refs",
   "hooks",
@@ -11,7 +15,10 @@ export const defaultRegions: Regions = [
   "renders",
 ];
 
-// Ensure that the custom configuration is set
+/**
+ * Ensures that the custom configuration for regions is set.
+ * If the custom configuration is not defined, it will be set with the default array.
+ */
 export const ensureCustomRegionsConfiguration = () => {
   const customRegionsKey = "react-code-regions.customRegions";
   const configuration = vscode.workspace.getConfiguration();
