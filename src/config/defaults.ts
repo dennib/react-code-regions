@@ -2,6 +2,12 @@ import * as vscode from "vscode";
 import { Regions } from "../types";
 
 /**
+ * The extension identifier for the "react-code-regions" extension.
+ * @type {string}
+ */
+export const extensionId: string = "react-code-regions";
+
+/**
  * @type {Regions}
  * @description Default regions for React code comments.
  */
