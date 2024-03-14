@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 
 import { ensureCustomRegionsConfiguration } from "./config/index";
-import { registerInsertRegionCommentCommand } from "./commands/insertRegionComment";
+import { registerInsertRegionCommentCommand } from "./commands";
 
 export function activate(context: vscode.ExtensionContext) {
   // Automatically set user configuration if not already present
