@@ -2,7 +2,7 @@
   "name": "react-code-regions",
   "displayName": "React Code Regions",
   "description": "",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -14,12 +14,19 @@
     "onCommand:react-code-region.insertRegionComment"
   ],
   "publisher": "dennib",
+  "repository": {
+    "url": "https://github.com/dennib/react-code-regions"
+  },
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "react-code-regions.insertRegionComment",
-        "title": "Insert region comment"
+        "title": "React Code Regions: Insert region comment"
+      },
+      {
+        "command": "react-code-regions.resetConfiguration",
+        "title": "React Code Regions: Reset Custom Configuration"
       }
     ],
     "keybindings": [
