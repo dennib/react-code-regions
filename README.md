@@ -33,7 +33,7 @@ No known issues at the moment. If you encounter any issues, please feel free to 
 
 ## Release Notes
 
-### 0.0.3
+### 0.0.6
 
 Initial release of the "react-code-regions" extension.
 
