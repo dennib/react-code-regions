@@ -14,6 +14,7 @@ export const extensionId: string = "react-code-regions";
 export const defaultRegions: Regions = [
   "refs",
   "hooks",
+  "form",
   "state",
   "effects",
   "api",
